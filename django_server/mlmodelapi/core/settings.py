@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Custom Creation
-    "modelapi",
+    # Third party
     "rest_framework",
+    # Local
+    "modelapi",  # Ml model
+    "ui_ux",  # User Interface Design
 ]
 
 MIDDLEWARE = [
@@ -138,3 +140,8 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.JSONRenderer",
     ],
 }
+
+# global `static/`
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]

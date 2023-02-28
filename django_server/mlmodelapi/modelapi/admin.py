@@ -1,3 +1,7 @@
-from django.contrib import admin
+"""
+Provide access of this app models to admin
+Access admin in browser by
+.../admin/
+"""
 
-# Register your models here.
+# from django.contrib import admin

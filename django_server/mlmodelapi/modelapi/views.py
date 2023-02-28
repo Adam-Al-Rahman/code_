@@ -7,25 +7,16 @@ In our case, the implementation will be on the prediction function.
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-
 import numpy as np
 
 from .apps import ModelApiConfig
 
 
-@api_view(["GET"])
-def index(request):
-    return_data = {
-        "error_code": "0",
-        "info": "success",
-    }
-    return Response(return_data)
-
-
 @api_view(["POST"])
 def predict_patient_status(request):
     """
-    Predict patient status
+    Predict patient status\n
+    Request Method: Post
     """
     try:
         # load the request data
