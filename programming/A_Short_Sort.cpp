@@ -1,16 +1,13 @@
 #include <iostream>
 #include <string>
 
-
-int main(){
+int main() {
 
   int test;
   std::cin >> test;
 
-  while(test--){
-   std::string abc;
-   std::cin >> abc;
-
-   for(int
+  while (test--) {
+    std::string abc;
+    std::cin >> abc;
   }
 }
